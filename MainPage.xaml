@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SportsManagementSystem.MainPage">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0" WidthRequest="250" BackgroundColor="#8B4513">
+            <!-- Binding the MenuItemsSource to your ViewModel's MenuItems property -->
+            <CollectionView x:Name="MenuCollectionView" ItemsSource="{Binding MenuItems}" SelectionMode="Single" SelectionChanged="OnMenuSelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Label Text="{Binding Title}" TextColor="White"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        <ContentPage.Content>
+            <!-- Content for selected menu item goes here -->
+        </ContentPage.Content>
+    </Grid>
+</ContentPage>

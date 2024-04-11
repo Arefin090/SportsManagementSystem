@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/arefinn.sojol/SportsManagementSystem/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/arefinn.sojol/SportsManagementSystem/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/SportsManagementSystem.app
