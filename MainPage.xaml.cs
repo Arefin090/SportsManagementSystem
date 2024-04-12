@@ -34,7 +34,6 @@ namespace SportsManagementSystem
                 new MenuItem { Title = "Profile" },
                 new MenuItem { Title = "Product" },
 				new MenuItem { Title = "Users" }
-                // Add more items here as needed
             };
         }
     }
